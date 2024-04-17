@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.agenda {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.jogo {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.jogo-header {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.jogo-data {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.jogo-equipes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.equipe {
+    flex: 1;
+    text-align: center;
+}
+
+.equipe-nome {
+    font-weight: bold;
+}
+
+.versus {
+    font-size: 20px;
+    margin: 0 15px;
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Jogos - GE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .agenda {
+            max-width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .jogo {
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .jogo-header {
+            background-color: #007BFF;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .jogo-data {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .jogo-equipes {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .equipe {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+        }
+
+        .equipe-logo {
+            width: 40px;
+            height: auto;
+            margin-bottom: 5px;
+        }
+
+        .equipe-nome {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .versus {
+            font-size: 20px;
+            margin: 0 15px;
+        }
+
+        .assistir-btn {
+            background-color: #007BFF;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 14px;
+        }
+
+        .assistir-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .jogo-footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="agenda">
+    <!-- Rodada 1 -->
+    <div class="jogo">
+        <div class="jogo-header">Rodada 2</div>
+        <div class="jogo-data">19:00</div>
+        <div class="jogo-equipes">
+            <div class="equipe">
+                <img src="img/Gremio.png" alt="Logo Time A" class="equipe-logo">
+                <div class="equipe-nome">Grêmio</div>
+            </div>
+            <div class="versus">vs</div>
+            <div class="equipe">
+                <img src="img/Atlético Pr.png" alt="Logo Time B" class="equipe-logo">
+                <div class="equipe-nome">Athletico-PR</div>
+            </div>
+        </div>
+        <div class="jogo-footer">
+            <button class="assistir-btn" onclick="window.location.href='https://reidoscanais.org/embed/?id=premiere3'">Link para assistir</button>
+        </div>
+    </div>
+    <!-- Fim Rodada 1 -->
+
+    <!-- Rodada 2 -->
+    <div class="jogo">
+        <div class="jogo-header">Rodada 2</div>
+        <div class="jogo-data">19:00</div>
+        <div class="jogo-equipes">
+            <div class="equipe">
+                <img src="img/Bragantino.png" alt="Logo Time C" class="equipe-logo">
+                <div class="equipe-nome">Bragantino</div>
+            </div>
+            <div class="versus">vs</div>
+            <div class="equipe">
+                <img src="img/Vasco.png" alt="Logo Time D" class="equipe-logo">
+                <div class="equipe-nome">Vasco</div>
+            </div>
+        </div>
+        <div class="jogo-footer">
+            <button class="assistir-btn" onclick="window.location.href='https://reidoscanais.org/embed/?id=premiere4'">Link para assistir</button>
+        </div>
+    </div>
+    <!-- Fim Rodada 2 -->
+
+    <!-- Rodada 3 -->
+    <div class="jogo">
+        <div class="jogo-header">Rodada 2</div>
+        <div class="jogo-data">20:00</div>
+        <div class="jogo-equipes">
+            <div class="equipe">
+                <img src="img/Atlético MG.webp" alt="Logo Time E" class="equipe-logo">
+                <div class="equipe-nome">Atlético-MG</div>
+            </div>
+            <div class="versus">vs</div>
+            <div class="equipe">
+                <img src="img/Criciúma.png" alt="Logo Time F" class="equipe-logo">
+                <div class="equipe-nome">Criciúma</div>
+            </div>
+        </div>
+        <div class="jogo-footer">
+            <button class="assistir-btn" onclick="window.location.href='https://reidoscanais.org/embed/?id=premiere5'">Link para assistir</button>
+        </div>
+    </div>
+    <!-- Fim Rodada 3 -->
+
+    <!-- Rodada 4 -->
+    <div class="jogo">
+        <div class="jogo-header">Rodada 2</div>
+        <div class="jogo-data">20:00</div>
+        <div class="jogo-equipes">
+            <div class="equipe">
+                <img src="img/Palmeiras.webp" alt="Logo Time G" class="equipe-logo">
+                <div class="equipe-nome">Palmeiras</div>
+            </div>
+            <div class="versus">vs</div>
+            <div class="equipe">
+                <img src="img/Internacional.png" alt="Logo Time H" class="equipe-logo">
+                <div class="equipe-nome">Internacional</div>
+            </div>
+        </div>
+        <div class="jogo-footer">
+            <button class="assistir-btn" onclick="window.location.href='https://reidoscanais.org/embed/?id=premiereclubes'">Link para assistir</button>
+        </div>
+    </div>
+    <!-- Fim Rodada 4 -->
+
+    <!-- Rodada 5 -->
+    <div class="jogo">
+        <div class="jogo-header">Rodada 2</div>
+        <div class="jogo-data">20:00</div>
+        <div class="jogo-equipes">
+            <div class="equipe">
+                <img src="img/Fortaleza.png" alt="Logo Time I" class="equipe-logo">
+                <div class="equipe-nome">Fortaleza</div>
+            </div>
+            <div class="versus">vs</div>
+            <div class="equipe">
+                <img src="img/Cruzeiro.png" alt="Logo Time J" class="equipe-logo">
+                <div class="equipe-nome">Cruzeiro</div>
+            </div>
+        </div>
+        <div class="jogo-footer">
+            <button class="assistir-btn" onclick="window.location.href='https://reidoscanais.org/embed/?id=premiere6'">Link para assistir</button>
+        </div>
+    </div>
+    <!-- Fim Rodada 5 -->
+
+    <!-- Rodada 6 -->
+    <div class="jogo">
+        <div class="jogo-header">Rodada 2</div>
+        <div class="jogo-data">20:00</div>
+        <div class="jogo-equipes">
+            <div class="equipe">
+                <img src="img/Juventude.png" alt="Logo Time K" class="equipe-logo">
+                <div class="equipe-nome">Juventude</div>
+            </div>
+            <div class="versus">vs</div>
+            <div class="equipe">
+                <img src="img/Corinthians.webp" alt="Logo Time L" class="equipe-logo">
+                <div class="equipe-nome">Corinthians</div>
+            </div>
+        </div>
+        <div class="jogo-footer">
+            <button class="assistir-btn" onclick="window.location.href='https://reidoscanais.org/embed/?id=premiere2'">Link para assistir</button>
+        </div>
+    </div>
+    <!-- Fim Rodada 6 -->
+
+    <!-- Rodada 7 -->
+    <div class="jogo">
+        <div class="jogo-header">Rodada 2</div>
+        <div class="jogo-data">21:30</div>
+        <div class="jogo-equipes">
+            <div class="equipe">
+                <img src="img/Flamengo.webp" alt="Logo Time M" class="equipe-logo">
+                <div class="equipe-nome">Flamengo</div>
+            </div>
+            <div class="versus">vs</div>
+            <div class="equipe">
+                <img src="img/São Paulo.png" alt="Logo Time N" class="equipe-logo">
+                <div class="equipe-nome">São Paulo</div>
+            </div>
+        </div>
+        <div class="jogo-footer">
+            <button class="assistir-btn" onclick="window.location.href='https://globoplay.globo.com/tv-globo/ao-vivo'">Link para assistir</button>
+        </div>
+    </div>
+    <!-- Fim Rodada 7 -->
+
+    <!-- Rodada 8 -->
+    <!-- <div class="jogo">
+        <div class="jogo-header">Rodada 2</div>
+        <div class="jogo-data">22:00</div>
+        <div class="jogo-equipes">
+            <div class="equipe">
+                <img src="Inter.png" alt="Logo Time O" class="equipe-logo">
+                <div class="equipe-nome">Inter</div>
+            </div>
+            <div class="versus">vs</div>
+            <div class="equipe">
+                <img src="Roma.png" alt="Logo Time P" class="equipe-logo">
+                <div class="equipe-nome">Roma</div>
+            </div>
+        </div>
+        <div class="jogo-footer">
+            <button class="assistir-btn" onclick="window.location.href='https://example.com'">Link para assistir</button>
+        </div>
+    </div> -->
+    <!-- Fim Rodada 8 -->
+
+    <!-- Rodada 9 -->
+    <!-- <div class="jogo">
+        <div class="jogo-header">Rodada 2</div>
+        <div class="jogo-data">23:00</div>
+        <div class="jogo-equipes">
+            <div class="equipe">
+                <img src="Napoli.png" alt="Logo Time Q" class="equipe-logo">
+                <div class="equipe-nome">Napoli</div>
+            </div>
+            <div class="versus">vs</div>
+            <div class="equipe">
+                <img src="Lyon.png" alt="Logo Time R" class="equipe-logo">
+                <div class="equipe-nome">Lyon</div>
+            </div>
+        </div>
+        <div class="jogo-footer">
+            <button class="assistir-btn" onclick="window.location.href='https://example.com'">Link para assistir</button>
+        </div> -->
+    </div>
+    <!-- Fim Rodada 9 -->
+</div>
+
+</body>
+</html>
