@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,7 +79,8 @@
             margin: 0 15px;
         }
 
-        .assistir-btn {
+        .assistir-btn,
+        .assistir-btn-alt {
             background-color: #007BFF;
             color: #ffffff;
             border: none;
@@ -87,9 +89,11 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             font-size: 14px;
+            margin-bottom: 10px;
         }
 
-        .assistir-btn:hover {
+        .assistir-btn:hover,
+        .assistir-btn-alt:hover {
             background-color: #0056b3;
         }
 
@@ -97,114 +101,139 @@
             width: 100%;
             display: flex;
             justify-content: center;
+            gap: 10px;
         }
     </style>
 </head>
+
 <body>
 
-<div class="agenda">
-    <!-- Rodada 1 -->
-    <div class="jogo">
-        <div class="jogo-header">Quartas de Finais (Europa League)</div>
-        <div class="jogo-data">16:00</div>
-        <div class="jogo-equipes">
-            <div class="equipe">
-                <img src="img/Roma.png" alt="Logo Time A" class="equipe-logo">
-                <div class="equipe-nome">Roma</div>
+    <div class="agenda">
+        <!-- Rodada 1 -->
+        <div class="jogo">
+            <div class="jogo-header">Quartas de Finais (Europa League)</div>
+            <div class="jogo-data">16:00</div>
+            <div class="jogo-equipes">
+                <div class="equipe">
+                    <img src="img/Roma.png" alt="Logo Time A" class="equipe-logo">
+                    <div class="equipe-nome">Roma</div>
+                </div>
+                <div class="versus">vs</div>
+                <div class="equipe">
+                    <img src="img/Milan.png" alt="Logo Time B" class="equipe-logo">
+                    <div class="equipe-nome">Milan</div>
+                </div>
             </div>
-            <div class="versus">vs</div>
-            <div class="equipe">
-                <img src="img/Milan.png" alt="Logo Time B" class="equipe-logo">
-                <div class="equipe-nome">Milan</div>
+            <div class="jogo-footer">
+                <button class="assistir-btn"
+                    onclick="window.location.href='https://reidoscanais.org/embed/?id=espn'">Link para assistir</button>
+                <button class="assistir-btn-alt"
+                    onclick="window.location.href='https://reidoscanais.org/embed/?id=espn2'">Link Alternativo</button>
             </div>
         </div>
-        <div class="jogo-footer">
-            <button class="assistir-btn" onclick="window.location.href='https://reidoscanais.org/embed/?id=espn'">Link para assistir</button>
-        </div>
-    </div>
-    <!-- Fim Rodada 1 -->
+        <!-- Fim Rodada 1 -->
 
-    <!-- Rodada 2 -->
-    <div class="jogo">
-        <div class="jogo-header">Quartas de Finais (Europa League)</div>
-        <div class="jogo-data">16:00</div>
-        <div class="jogo-equipes">
-            <div class="equipe">
-                <img src="img/Atalanta.png" alt="Logo Time C" class="equipe-logo">
-                <div class="equipe-nome">Atalanta</div>
+        <!-- Rodada 2 -->
+        <div class="jogo">
+            <div class="jogo-header">Quartas de Finais (Europa League)</div>
+            <div class="jogo-data">16:00</div>
+            <div class="jogo-equipes">
+                <div class="equipe">
+                    <img src="img/Atalanta.png" alt="Logo Time C" class="equipe-logo">
+                    <div class="equipe-nome">Atalanta</div>
+                </div>
+                <div class="versus">vs</div>
+                <div class="equipe">
+                    <img src="img/Liverpool.png" alt="Logo Time D" class="equipe-logo">
+                    <div class="equipe-nome">Liverpool</div>
+                </div>
             </div>
-            <div class="versus">vs</div>
-            <div class="equipe">
-                <img src="img/Liverpool.png" alt="Logo Time D" class="equipe-logo">
-                <div class="equipe-nome">Liverpool</div>
+            <div class="jogo-footer">
+                <button class="assistir-btn"
+                    onclick="window.location.href='https://reidoscanais.org/embed/?id=premiere4'">Link para
+                    assistir</button>
+                <button class="assistir-btn-alt"
+                    onclick="window.location.href='https://multicanais.bet/assistir-espn-ao-vivo-online/'">Link
+                    Alternativo</button>
             </div>
         </div>
-        <div class="jogo-footer">
-            <button class="assistir-btn" onclick="window.location.href='https://reidoscanais.org/embed/?id=premiere4'">Link para assistir</button>
-        </div>
-    </div>
-    <!-- Fim Rodada 2 -->
+        <!-- Fim Rodada 2 -->
 
-    <!-- Rodada 3 -->
-    <div class="jogo">
-        <div class="jogo-header">Quartas de Finais (Europa League)</div>
-        <div class="jogo-data">16:00</div>
-        <div class="jogo-equipes">
-            <div class="equipe">
-                <img src="img/Olympique de Marseille.png" alt="Logo Time E" class="equipe-logo">
-                <div class="equipe-nome">Olympique de Marseille</div>
+        <!-- Rodada 3 -->
+        <div class="jogo">
+            <div class="jogo-header">Quartas de Finais (Europa League)</div>
+            <div class="jogo-data">16:00</div>
+            <div class="jogo-equipes">
+                <div class="equipe">
+                    <img src="img/Olympique de Marseille.png" alt="Logo Time E" class="equipe-logo">
+                    <div class="equipe-nome">Olympique de Marseille-MG</div>
+                </div>
+                <div class="versus">vs</div>
+                <div class="equipe">
+                    <img src="img/Benfica.png" alt="Logo Time F" class="equipe-logo">
+                    <div class="equipe-nome">Benfica</div>
+                </div>
             </div>
-            <div class="versus">vs</div>
-            <div class="equipe">
-                <img src="img/Benfica.png" alt="Logo Time F" class="equipe-logo">
-                <div class="equipe-nome">Benfica</div>
+            <div class="jogo-footer">
+                <button class="assistir-btn"
+                    onclick="window.location.href='https://reidoscanais.org/embed/?id=premiere5'">Link para
+                    assistir</button>
+                <button class="assistir-btn-alt"
+                    onclick="window.location.href='https://multicanais.bet/assistir-espn-3-ao-vivo-online/'">Link Alternativo</button>
             </div>
         </div>
-        <div class="jogo-footer">
-            <button class="assistir-btn" onclick="window.location.href='https://reidoscanais.org/embed/?id=premiere5'">Link para assistir</button>
-        </div>
-    </div>
-    <!-- Fim Rodada 3 -->
+        <!-- Fim Rodada 3 -->
 
-    <!-- Rodada 4 -->
-    <div class="jogo">
-        <div class="jogo-header">Quartas de Finais (Europa League)</div>
-        <div class="jogo-data">16:00</div>
-        <div class="jogo-equipes">
-            <div class="equipe">
-                <img src="img/West Ham.png" alt="Logo Time G" class="equipe-logo">
-                <div class="equipe-nome">West Ham</div>
+        <!-- Rodada 4 -->
+        <div class="jogo">
+            <div class="jogo-header">Quartas de Finais (Europa League)</div>
+            <div class="jogo-data">16:00</div>
+            <div class="jogo-equipes">
+                <div class="equipe">
+                    <img src="img/West Ham.png" alt="Logo Time G" class="equipe-logo">
+                    <div class="equipe-nome">West Ham</div>
+                </div>
+                <div class="versus">vs</div>
+                <div class="equipe">
+                    <img src="img/Leverkusen.png" alt="Logo Time H" class="equipe-logo">
+                    <div class="equipe-nome">Bayer Leverkusen</div>
+                </div>
             </div>
-            <div class="versus">vs</div>
-            <div class="equipe">
-                <img src="img/Leverkusen.png" alt="Logo Time H" class="equipe-logo">
-                <div class="equipe-nome">Bayer Leverkusen</div>
+            <div class="jogo-footer">
+                <button class="assistir-btn"
+                    onclick="window.location.href='https://reidoscanais.org/embed/?id=espn4'">Link para
+                    assistir</button>
+                <button class="assistir-btn-alt"
+                    onclick="window.location.href='https://multicanais.bet/assistir-bayer-leverkusen-x-west-ham-ao-vivo-online-hd-11-04-2024/'">Link
+                    Alternativo</button>
             </div>
         </div>
-        <div class="jogo-footer">
-            <button class="assistir-btn" onclick="window.location.href='https://reidoscanais.org/embed/?id=espn4'">Link para assistir</button>
-        </div>
-    </div>
-    <!-- Fim Rodada 4 -->
+        <!-- Fim Rodada 4 -->   
 
-    <!-- Rodada 5 -->
-    <div class="jogo">
-        <div class="jogo-header">Rodada 2</div>
-        <div class="jogo-data">21:30</div>
-        <div class="jogo-equipes">
-            <div class="equipe">
-                <img src="img/Botafogo.png" alt="Logo Time I" class="equipe-logo">
-                <div class="equipe-nome">Botafogo</div>
+        <!-- Rodada 5 -->
+        <div class="jogo">
+            <div class="jogo-header">Rodada 2</div>
+            <div class="jogo-data">21:30</div>
+            <div class="jogo-equipes">
+                <div class="equipe">
+                    <img src="img/Botafogo.png" alt="Logo Time I" class="equipe-logo">
+                    <div class="equipe-nome">Botafogo</div>
+                </div>
+                <div class="versus">vs</div>
+                <div class="equipe">
+                    <img src="img/Atéltico Go.png" alt="Logo Time J" class="equipe-logo">
+                    <div class="equipe-nome">Atlético-GO</div>
+                </div>
             </div>
-            <div class="versus">vs</div>
-            <div class="equipe">
-                <img src="img/Atéltico Go.png" alt="Logo Time J" class="equipe-logo">
-                <div class="equipe-nome">Atlético-GO</div>
+            <div class="jogo-footer">
+                <button class="assistir-btn"
+                    onclick="window.location.href='https://reidoscanais.org/embed/?id=premiereclubes'">Link para
+                    assistir</button>
+                <button class="assistir-btn-alt"
+                    onclick="window.location.href='https://multicanais.bet/assistir-palmeiras-x-internacional-ao-vivo-online-hd-17-04-2024/'">Link Alternativo</button>
             </div>
         </div>
-        <div class="jogo-footer">
-            <button class="assistir-btn" onclick="window.location.href='https://reidoscanais.org/embed/?id=premiereclubes'">Link para assistir</button>
-        </div>
+        <!-- Fim Rodada 5 -->
     </div>
     <!-- Fim Rodada 5 -->
 
@@ -291,7 +320,8 @@
         </div> -->
     </div>
     <!-- Fim Rodada 9 -->
-</div>
+    </div>
 
 </body>
+
 </html>
